@@ -13,26 +13,37 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header container">
-      <a href="#" class="logo">
-        <img width="135" src="img/logo.png" alt="logo" class="logo-image" />
-      </a>
-      <ul class="menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link">Билеты</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">О фильме</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Трейлеры</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Отзывы</a>
-        </li>
-      </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrap">
+          <a href="#" class="logo">
+            <img width="135" src="img/logo.png" alt="logo" class="logo-image" />
+          </a>
+          <nav class="menu">
+            <div id="menu-header">
+              <span class="menu-span"></span>
+              <span class="menu-span"></span>
+              <span class="menu-span"></span>
+            </div>
+            <div id="menu-content">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Билеты</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">О фильме</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Трейлеры</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Отзывы</a>
+              </li>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <section class="content">
         <div class="container">
           <span class="subtitle">Эпизод IX</span>
@@ -106,10 +117,10 @@
             </div>
           </div>
           <div class="slider-buttons">
-            <div class="slider-button slider-button-left">
+            <div class="slider-button slider-button-left" id="slide_left">
               <img src="img/left-arrow.svg" alt="left-arrow" />
             </div>
-            <div class="slider-button slider-button-right">
+            <div class="slider-button slider-button-right" id="slide_right">
               <img src="img/right-arrow.svg" alt="right-arrow" />
             </div>
           </div>
@@ -122,13 +133,13 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/solders/kylo.png" class="solder" alt="" />
-              </div>
+              <div class="swiper-slide"></div>
               <div class="swiper-slide">
                 <img src="img/solders/solder.png" class="solder" alt="" />
               </div>
-              <div class="swiper-slide"></div>
+              <div class="swiper-slide">
+                <img src="img/solders/kylo.png" class="solder" alt="" />
+              </div>
             </div>
 
             <!-- If we need navigation buttons -->
@@ -138,6 +149,7 @@
     </main>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scriprt.js"></script>
   </body>
 </html>
